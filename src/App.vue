@@ -1,5 +1,5 @@
 <template>
- <h1>Hola, Pendejo</h1>
+ <h1>{{ title }}</h1>
 </template>
 
 <script>
@@ -7,8 +7,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      title: '¡Hola, Pendejo!'
+    }
   }
 }
 </script>
