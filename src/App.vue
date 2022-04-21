@@ -1,8 +1,9 @@
 <template>
  <h1>{{ title }}</h1>
  <ModalVue 
-    header="Sign Up For Mailing List" 
-    text="Be on the look out for our giveaways!"/>
+    :header="header" 
+    :text="text" 
+     theme="sale"/>
 </template>
 
 <script>
@@ -13,7 +14,9 @@ export default {
   components: { ModalVue },
   data() {
     return {
-      title: '¡Hola, Pendejo!'
+      title: '¡Hola, Pendejo!',
+      header: "Sign Up For Mailing List",
+      text: "Be on the look out for our giveaways!"
     }
   }
 }
